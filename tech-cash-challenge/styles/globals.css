@@ -1,0 +1,229 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  color: #757780;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+h3 {font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.landing-page__title {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  color: #FFF;
+}
+
+.landing-page__subtitle {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  color: #FFF;
+}
+
+.centerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 88vh;
+  background-color: rgb(24, 22, 22)
+}
+
+.home-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 88vh;
+  background-color: rgb(24, 22, 22)
+}
+
+.register-loginForms {
+  padding: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+/* estilização do header */
+
+.home-header {
+  width: 100vw;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  background: #000;
+  box-shadow: 4px 8px 32px -12px black;
+}
+
+.home-header__button-handler {
+  display: flex;
+  gap: 10px;
+}
+
+/* body dashboard */
+
+.user-content {
+  gap: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 88vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px){
+  .user-content {
+    gap: 0px;
+  }
+}
+
+.user-content__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  gap: 30px;
+  margin-top: 90px;
+}
+
+.user-content__info-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.transactionCardsList {
+  display: flex;
+  flex-direction: column;
+  max-width: 1900px;
+  max-height: 76vh;
+  gap: 10px;
+  border: 2px solid black;
+  border-bottom: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  padding: 20px;
+  margin-top: 90px;
+  scrollbar-width: thin;
+}
+
+.transactionCardsList::-webkit-scrollbar {
+  width: 3px;
+  height: 0px;
+}
+
+.transactionCardsList::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.transactionCardsList::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.transactionCards {
+  display: flex;
+  min-width: 350px;
+  min-height: 200px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F8F9FA;
+  border-radius: 8px;
+}
+
+.card-filled__entry {
+  background-color: #009688;
+  border-left: 2px solid #009688;
+  height: 200px;
+  width: 4px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.card-filled__exit {
+  background-color: #E9ECEF;
+  height: 200px;
+  width: 4px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.card-filled__inv {
+  background-color: #F8F9FA;
+  height: 200px;
+  width: 1px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.div-valor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transactions-cards__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
